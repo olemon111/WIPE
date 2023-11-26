@@ -1,0 +1,73 @@
+## Test
+a.out
+*.xlsx
+*output.txt
+
+*.svg
+
+## CMake
+build/
+src/letree_config.h
+
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+## VSCode
+.vscode
+
+## TeX
+
+# Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+
+# tcolorbox
+*.listing
+
+# minted
+_minted*
+*.pyg
+
+# Generated if empty string is given at "Please type another file name for output:"
+.pdf
+
+# Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.dat

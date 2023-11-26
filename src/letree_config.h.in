@@ -1,0 +1,50 @@
+#pragma once
+
+#cmakedefine SERVER
+#cmakedefine USE_LIBPMEM
+#cmakedefine BUF_SORT
+#cmakedefine STREAMING_STORE
+#cmakedefine STREAMING_LOAD
+#cmakedefine NO_LOCK
+#cmakedefine BRANGE
+#cmakedefine NO_ENTRY_BUF
+
+#ifndef PMEM_DIR
+#define PMEM_DIR @PMEM_DIR@
+#endif
+#ifndef CLEVEL_PMEM_FILE_SIZE
+#define CLEVEL_PMEM_FILE_SIZE @CLEVEL_PMEM_FILE_SIZE@
+#endif
+#ifndef CLEVEL_PMEM_FILE
+#define CLEVEL_PMEM_FILE      @CLEVEL_PMEM_FILE@
+#endif
+#ifndef BLEVEL_PMEM_FILE
+#define BLEVEL_PMEM_FILE      @BLEVEL_PMEM_FILE@
+#endif
+#ifndef ALEVEL_PMEM_FILE
+#define ALEVEL_PMEM_FILE      @ALEVEL_PMEM_FILE@
+#endif
+#ifndef PGM_INDEX_PMEM_FILE
+#define PGM_INDEX_PMEM_FILE      @PGM_INDEX_PMEM_FILE@
+#endif
+#ifndef COMMON_PMEM_FILE
+#define COMMON_PMEM_FILE      @COMMON_PMEM_FILE@
+#endif
+#ifndef BLEVEL_EXPAND_BUF_KEY
+#define BLEVEL_EXPAND_BUF_KEY @BLEVEL_EXPAND_BUF_KEY@
+#endif
+#ifndef DEFAULT_SPAN
+#define DEFAULT_SPAN          @DEFAULT_SPAN@
+#endif
+#ifndef PMEMKV_THRESHOLD
+#define PMEMKV_THRESHOLD      @PMEMKV_THRESHOLD@
+#endif
+#ifndef EXPANSION_FACTOR
+#define EXPANSION_FACTOR      @EXPANSION_FACTOR@
+#endif
+#ifndef ENTRY_SIZE_FACTOR
+#define ENTRY_SIZE_FACTOR     @ENTRY_SIZE_FACTOR@
+#endif
+#if defined(BRANGE) && !defined(EXPAND_THREADS)
+#define EXPAND_THREADS        @EXPAND_THREADS@
+#endif
